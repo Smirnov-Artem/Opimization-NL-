@@ -201,7 +201,7 @@ x <- as.vector(result_1$units_of_commodity)
 
 #Total for all months with plot and coefficient table
 
-model <- nls(y ~ d1*b1*exp(a1*x*d1)+d2*b2*exp(a2*x*d2)+d3*b3*exp(a3*x*d3)+d4*b4*exp(a4*x*d4)+d5*b5*exp(a5*x*d5)+d6*b6*exp(a6*x*d6)+d7*b7*exp(a7*x*d7)+d8*b8*exp(a8*x*d8)+d8*b8*exp(a8*x*d8)+d9*b9*exp(a9*x*d9)+d10*b10*exp(a10*x*d10)+d11*b11*exp(a11*x*d11)+d12*b12*exp(a12*x*d12), start=list(b1= 326.375033, a1=-0.0105241, b2= 326.375033, a2= -0.0105241, b3= 326.375033, a3= -0.0105241, b4= 326.375033, a4= -0.0105241, b5= 326.375033, a5= -0.0105241, b6= 326.375033, a6= -0.0105241, b7= 326.375033, a7= -0.0105241, b8= 326.375033, a8= -0.0105241, b9= 326.375033, a9= -0.0105241, b10= 326.375033, a10= -0.0105241, b11= 326.375033, a11= -0.0105241, b12= 326.375033, a12= -0.0105241))
+model <- nls(y ~ d1*b1*exp(a1*x*d1)+d2*b2*exp(a2*x*d2)+d3*b3*exp(a3*x*d3)+d4*b4*exp(a4*x*d4)+d5*b5*exp(a5*x*d5)+d6*b6*exp(a6*x*d6)+d7*b7*exp(a7*x*d7)+d8*b8*exp(a8*x*d8)+d8*b8*exp(a8*x*d8)+d9*b9*exp(a9*x*d9)+d10*b10*exp(a10*x*d10)+d11*b11*exp(a11*x*d11)+d12*b12*exp(a12*x*d12), start=list(b1=1, a1=1, b2=1, a2=1, b3=1, a3=1, b4=1, a4=1, b5=1, a5=1, b6=1, a6=1, b7=1, a7=1, b8=1, a8=1, b9=1, a9=1, b10=1, a10=1, b11=1, a11=1, b12=1, a12=1))
 summary(model)
 y_pred <- predict(model)
 y_pred
